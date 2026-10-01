@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/Jeevanantham74/jenkins-project4.git'
+                    url: 'https://github.com/Jeevanantham74/jenkins-project4.git'
             }
         }
 
@@ -20,7 +20,7 @@ pipeline {
 
         stage('Run Linter') {
             steps {
-                bat 'flake8 app.py'
+                bat 'python -m flake8 app.py'
             }
         }
     }
