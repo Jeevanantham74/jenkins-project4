@@ -20,7 +20,7 @@ pipeline {
 
         stage('Run Linter') {
             steps {
-                bat 'python -m flake8 app.py'
+                bat '"C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m flake8 app.py'
             }
         }
     }
